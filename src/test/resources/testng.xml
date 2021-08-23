@@ -1,6 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Main suite" parallel = "tests" thread-count = "2">
-
     <listeners>
         <listener class-name="TestListener"></listener>
     </listeners>
