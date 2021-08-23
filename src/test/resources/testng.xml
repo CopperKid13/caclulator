@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main suite" parallel = "tests" thread-count = "2">
+
+    <listeners>
+        <listener class-name="TestListener"></listener>
+    </listeners>
+
+    <test name="Arithmetic operations">
+        <classes>
+            <class name="SumIntegerTest"></class>
+            <class name="SumDoubleTest"></class>
+            <class name="SubtractionIntegerTest"></class>
+            <class name="SubtractionDoubleTest"></class>
+            <class name="DivisionIntegerTest"></class>
+            <class name="DivisionDoubleTest"></class>
+            <class name="MultiplicationIntegerTest"></class>
+            <class name="MultiplicationDoubleTest"></class>
+        </classes>
+    </test>
+
+    <test name="Trigonometric function">
+        <classes>
+            <class name="SinFunctionTest"></class>
+            <class name="CosFunctionTest"></class>
+            <class name="TgFunctionTest"></class>
+            <class name="CtgFunctionTest"></class>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
